@@ -1,57 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVIÇOS</title>
+    <title>Serviços</title>
 </head>
 
 <body>
-    <nav>
-        <div>
-            <button>
-                <span>CLICK</span>
-            </button>
-        </div>
-        <!--EMMET div>ul>li*4>a[href="#" target=""] -->
-        <div>
+    <!--Header envolvendo toda a navegação e logo-->
+    <header>
+        <p class="logo">EquipeDePonta</p> <!--Só para ter uma logo básica usei a tag <p>-->
+        <!--Desenvolvimento da navegação-->
+        <nav class="menu">
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#imagens">Imagens</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+        </nav>
+    </header>
+    <!--Main para colocar o conteúdo principal da página-->
+    <main class="topo" id="topo">
+        <h1>Equipe de Ponta</h1>
+        <img src="./assets/img/cidade.jpg" alt="" width="100%">
+        <p>
+            Somos uma equipe da área de Tecnologia, onde podemos atuar em diversas frentes.
+            Atuamos nos seguimentos de Desenvolvimento WEB, Minicursos remotos de linguagens que estão em alta no
+            mercado. WorkShops com os mais distintos especialistas da área.
+            Segurança da Informação também é uma especialidade que dominamos.
+        </p>
+        <a href="#servicos">Ver mais...</a>
+    </main>
+    <!--Seção sobre-->
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>
+            A empresa EQUIPE DE PONTA foi criada em 2021 no auge da pandemia, com o intuito de ajudar o próximo,
+            conseguiu construir uma história de sucesso ao longo de um ano de vida.
+            Não falamos por nós, deixamos nosso trabalho e nossos clientes falarem!
+        </p>
+    </section>
+
+    <!--Seção serviços-->
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul class="servicos">
+            <li class="servico-item">
+                <p>Desenvolvimento</p>
+                <a href=""><img src="./assets/img/desenvolvimento.jpg"
+                        alt="imagem com diferente dispositivos tecnologicos e periféricos" title="Desenvolvimento WEB" width="25%"></a>
+            </li>
+            <li class="servico-item">
+                <p>Cursos</p>
+                <a href=""><img src="./assets/img/cursos.png" alt="Notebook" title="Linguagens de programação" width="25%"></a>
+            </li>
+            <li class="servico-item">
+                <p>Eventos</p>
+                <a href=""><img src="./assets/img/eventos.jpg" alt="imagem de um fone de ouvido" title="Eventos com especialistas" width="25%"></a>
+            </li>
+            <li class="servico-item">
+                <p>Segurança</p>
+                <a href=""><img src="./assets/img/seguranca-info.png" alt="Nuvem de palavras" title="Segurança de dados" width="25%"></a>
+                </a>
+            </li>
+        </ul>
+        <a href="#contato">Contrate Agora</a>
+    </section>
+
+    <!--Seção contato-->
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <div>
+            <a href="mailto:"><img src="./assets/img/mail.png" alt="icone de e-mail">
+            </a>
+            <a href="tel:"><img src="./assets/img/tel.png" alt="icone de telefone"></a>
+            <br>
+            <br>
+            <a href="#contato">Fale conosco</a>
         </div>
-        <header id="topo">
-            <h1>Equipe de ponta</h1>
-            <p>Somos uma equipe da área de Tecnologia, onde podemos atuar em diversas frentes.
-                Atuamos nos seguimentos de Desenvolvimento WEB, Minicursos remotos de linguagens que estão em alta no
-                mercado. WorkShops com os mais distintos especialistas da área.
-                Segurança da Informação também é uma especialidade que dominamos.</p>
-            <a href="#servicos">Ver mais...</a>
-        </header>
-
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>A empresa EQUIPE DE PONTA foi criada em 2021 no auge da pandemia, com o intuito de ajudar o próximo,
-                conseguiu construir uma história de sucesso ao longo de um ano de vida.
-                Não falamos por nós, deixamos nosso trabalho e nossos clientes falarem!</p>
-            <a href="#contato">Contrate Agora</a>
-        </section>
-
-        <section id="section">
-            <h2>Serviços</h2>
-            <div><img src="" alt="" title=""></div>
-        </section>
-
-
-
-    </nav>
-
-
+    </section>
+  
+    <!--Footer ou Rodapé-->
+    <footer>
+        <ul>
+            <li><a href="#topo">Ínicio</a></li>
+        </ul>
+        <p>Desenvolvido por &copy;Paulo Alves, RM93693</p>
+    </footer>
 
 </body>
+
+
 
 </html>
