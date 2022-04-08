@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Space+Mono&display=swap');
+
 body {
     font-family: 'Trebuchet MS';
+    background-color: #202124;
+    color: #9AA0A6;
+}
+
+a {
+    font-family: 'Space Mono', monospace;
+    color: #8ab4f8;
+}
+
+ul>li {
+    display: inline-block;
+    padding: 10px 2%;
+    /* width: 5% */
+}
+
+#topo {
+    font-family: 'Space Mono', monospace;
+}
+
+#topo h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5em;
+}
+
+#topo p {
+    font-size: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.font-google {
+    font-family: 'Roboto Mono', monospace;
+    /* font-size: 2em;
+    *  font-style: italic;
+    */
 }
