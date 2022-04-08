@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 body{
-    font-family:'Trebuchet MS';
+    font-family:'Trebuchet MS', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(233, 233, 245,0.3);
+}
+
+#topo{
+    font-family: 'Courier New', Courier, monospace, serif;
+}
+
+#topo h1{
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+#topo p{
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-google{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-style: italic;
 }
