@@ -3,6 +3,8 @@
 
 body{
     font-family: 'Trebuchet MS', Verdana, Geneva, Tahoma, sans-serif;
+    /*Comentário em css*/
+    background-color: rgba(208, 252, 210, 0.927);
 }
 
 #topo{
@@ -16,4 +18,10 @@ body{
 
 #topo p{
     font-family: 'Oswald', sans-serif;
+}
+
+.font-google{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-style: italic;
 }
