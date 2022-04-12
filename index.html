@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVIÇOS</title>
-</head>
-    <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SERVIÇOS</title>
+        
+        <link rel="stylesheet" href="./css/style.css">
+
+        <style>
+            body{
+               font-family: 'Courier New';
+            }
+        </style>
+
+
+    </head>
+    <body style="font-family:'Gill Sans MT';">
         <nav>
             <div>
-                <button>
+                <button class="font-google">
                     <span>CLICK</span>
                 </button>
             </div>
-
+            <!--
+                <div>
+                    <ul> unordered list
+                        <li><a href="#sobre">Sobre</a></li>  List item
+                    </ul>
+                </div>
+                
+                Fórmula do Emmet para criação dinâmica de estrutura
+                div>ul>li*4>a[href="#"]>{Sobre}
+            -->
+            
             <div>
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#sobre" class="font-google">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#imagens">Imagens</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
+        </nav>
 
             <header id="topo">
                 <h1>Equipe de Ponta</h1>
                 <p>
                 Somos uma equipe da área de Tecnologia, onde podemos atuar em diversas frentes.
                 Atuamos nos seguimentos de Desenvolvimento WEB, Minicursos remotos de linguagens que estão em alta no mercado. WorkShops com os mais distintos especialistas da área.
-                Segurança da Informação também é uma especialidade que dominamos
+                Segurança da Informação também é uma especialidade que dominamos.               
                 </p>
                 <a href="#servicos">Ver mais...</a>
             </header>
 
             <section id="sobre">
                 <h2>Sobre</h2>
-                <p>A empresa EQUIPE DE PONTA foi criada em 2021 no auge da pandemia, com o intuito de ajudar o próximo, conseguiu construir uma história de sucesso ao longo de um ano de vida.
-                    Não falamos por nós, deixamos nosso trabalho e nossos clientes falarem!
+                <p>
+                    A empresa EQUIPE DE PONTA foi criada em 2021 no auge da pandemia, com o intuito de ajudar o próximo, conseguiu construir uma história de sucesso ao longo de um ano de vida.
+                    Não falamos por nós, deixamos nosso trabalho e nossos clientes falarem!  
                 </p>
-                <a href="#contato">Contrate agora!</a>
+                <a href="#contato">Contrate Agora</a>
+            </section>
+            <section id="imagens">
+                <h2 class="font-google">Imagens</h2>
+                <img src="./img/backbone.jpg" alt="Backbone." width="100%">
+                <img src="./img/cidade.jpg" alt="Cidade." width="100%">
+                <img src="./img/comunicao.jpg" alt="Entrelaçado de Fios." width="100%">
+                <img src="./img/icones.png" alt="Icones de Redes Sociais." width="100%">
+                <img src="./img/internet.jpg" alt="Grande rede Interativa." width="100%">
+                <img src="./img/rede.jpg" alt="Rede Virtual de Informações." width="100%">
             </section>
 
             <section id="servicos">
                 <h2>Serviços</h2>
-                    <div>
-                        <p><font size="4"></font>Aqui você encontra serviços de Desenvolvimento web</font></p>
-                        <img src="data:image/jpeg;base64,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" alt="Imagem ilustrativa do contato" width="10%">
-                    </div>
-            </section>
-
-            <section id="imagens">
-                <h2>Imagens</h2>
-                    <div>
-                        <p><font size="4">Fotos da nossa empresa!</font></p>
-                        <img src="https://i.pinimg.com/originals/c9/7f/b0/c97fb09931c71e6fea534589472abee3.jpg" alt="Predio da empresa" width="10%">
-                    </div>
+                <div>
+                    <img src="./img/desenvolvimento.jpg" alt="Tela de Computado." title="Desenvolvimento WEB" width="20%">
+                    <p>Desenvolvimento WEB</p>
+                </div>
+                <div>
+                    <img src="./img/cursos.png" alt="Notebook" title="Linguagens de Programação" width="20%">
+                    <p class="font-google">Minicursos remotos de linguagens</p>
+                </div>
+                <div>
+                    <img src="./img/eventos.jpg" alt="Fone de Ouvido" title="Eventos com Especialistas" width="20%">
+                    <p>WorkShops</p>
+                </div>
+                <div>
+                    <img src="./img/seguranca-info.png" alt="Nuvem de Palavras" title="Segurança de Dados" width="20%">
+                    <p>Segurança da Informação</p>
+                </div>
             </section>
 
             <section id="contato">
                 <h2>Contato</h2>
-                        <img src="https://agroemil.com.br/wp-content/uploads/2021/09/banner-contato.jpeg" alt="imagem representativa" width="10%">
-                        <div>
-                            <p>(11) 9 4323-5465</p>
-                            <p>contato@gmail.com</p>
-                        </div>
-                        <p><a href="#contato">Fale conosco!</a></p>
+                <p>Fale Conosco</p>
+                <div>
+                    <img src="./img/tel.png" alt="Telefone">
+                    <p><a href="tel:+5511997659099">(11)99765-9099</a></p>
+                </div>
+                <div>
+                    <img src="./img/mail.png" alt="Envelope">
+                    <p><a href="mailto:profalexandre.jesus@fiap.com.br">profalexandre.jesus@fiap.com.br</a></p>
+                </div>
             </section>
 
-            <footer id="topo">
-                <hr>
-                <div>
-                    <p><a href="#topo">Topo</a></p>
-                    <p>Desenvolvido por RM93535</p>
-                    <p>Todos os direitos reservados 2021 &copy</p>
-                </div>
+            <footer>
+                <a href="#topo">Voltar</a>
+                <p>Desenvolvido por PF0670.</p>
+                <p>Todos os direitos reservados. 2021&copy;</p>
             </footer>
-        </nav>
+
     </body>
-    </html>
+</html>
