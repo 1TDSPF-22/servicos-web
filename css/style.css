@@ -1,31 +1,49 @@
 /* Importado font Oswald do Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+html{
+    font-size: 32px;
+}
 
 body{
-    font-family: 'Trebuchet MS', Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(169, 183, 211, 0.186);
-    /* background-color: #c41cca6c; */
+    font-family: 'Nunito', sans-serif;
+    color: #1c1c1c;
+    font-size: 16px;
+}
+
+h1,h2,h3{
+    font-family: 'Asap', sans-serif;
+    color: #000000;
+}
+/* navbar */
+nav{
+    background-color: #191970;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+nav ul{
+    list-style: none;
 }
 
 /* Seletor id topo*/
 #topo{
-    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../img/fundo-pc.jpg");
+    color: #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#topo h1{
-    text-align: center;
-    font-family: 'Times New Roman', serif;
-}
-
-#topo p{
-    /* utilizado a font Oswald importado do Google Fonts*/
-    font-family: 'Oswald', sans-serif;
-}
-
-/* Seletor class .font-google*/
+/* Seletor class .font-google
 .font-google{
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-style: italic;
 }
+*/
