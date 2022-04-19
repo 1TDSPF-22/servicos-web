@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500;1,600&family=Nunito:wght@700&family=Oswald:wght@500;700&display=swap');
          
 
 body{
     font-family: 'Trebuchet MS', Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(0, 0, 255,0.3);
+    background-color: #fff);
 
 }
 
@@ -24,6 +24,14 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-style: italic;
+}
+
+#topo{
+    background-image: url(../img/fundo-pc.jpg);
+    color: #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
