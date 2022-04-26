@@ -106,26 +106,42 @@
     </section>
     <hr>
     <section id="contato">
-        <h2>CONTATOS</h2>
-        <div id="atendimeto">
-            <p>Fale Conosco</p>
+
+        <div>
+            <form action="index.html" method="get">
+                <fieldset>
+                    <legend>CONTATO</legend>
+                    <div>
+                        <label for="nmClienteId">Nome</label>
+                        <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome...">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telClienteId">Telefone</label>
+                        <input type="tel" name="telCliente" id="telClienteId" placeholder="Digite seu telefone...">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="emailClienteId">Email</label>
+                        <input type="email" name="emailCliente" id="emailClienteId" placeholder="Digite seu email...">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="genId">Gênero</label>
+                        <select name="genCliente" id="genClienteId">
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="o">Outros</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </fieldset>
+            </form>
         </div>
-        <div id="infoContato">
-            <img src="" alt="">
-            <p>
-                <!--"tel:" serve para poder fazer com que o usuário entre em um aplicativo de ligaçao com seu número-->
-                <li>
-                    <img src="img/tel.png" alt="">
-                    <a href="tel:+5511944562039">Telefone: (11) 94456-2039</a>
-                </li>
-                <!--"maillto" serve para o usuário abrir seu email-->
-                <li>
-                    <img src="img/mail.png" alt="envelope">
-                    <a href="mailto:igor.gc@fiap.com.br"> Email: igor.gc@fiap.com.pt</a>
-                </li>
-            </p>
-        </div>
-        <!-- RODAPÉ -->
     </section>
     <footer id="rodape">
 

@@ -10,6 +10,7 @@ body{
     font-family: 'Nunito', sans-serif;
     color: #1c1c1c;
     font-size: 16px;
+    background-color: antiquewhite;
 }
 
 h1,h2,h3{
@@ -51,4 +52,31 @@ nav ul{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+form{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+form input{
+    display: block;
+    margin: 1% 0;
+    border-radius: 5px;
+    border: solid 2px #ccc;
+}
+
+form input[type=text],input[type=tel],input[type=email]{
+    width: 400px;
+    height: 25px;
+    /*1em = 16px*/
+    font-size: 1em;
+}
+
+form input[type=submit],input[type=reset]{
+    display: inline;
+    background-color: dodgerblue;
+    color: #fff;
+    width: 150px;
+    height: 30px;
 }
