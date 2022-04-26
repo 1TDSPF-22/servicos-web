@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SERVIÇOS</title>
-    
-    <link rel="stylesheet" href="./css/style.css">
-    
-    </head>
         
-    <div>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        body{
+           font-family: 'Courier New';
+        }
+    </style>
+    </head>
+<body style="font-family:'Gill Sans MT';">
+    <nav>  
+        <div>
             <button class="font-google">
                 <span>CLICK</span>
             </button>
@@ -89,7 +95,56 @@
 </section>
 
 <section id="contato">
-    <h2>Contato</h2>
+    
+    <div>
+        <form action="index.html" method="GET">
+            <fieldset>
+                <legend>CONTATO</legend>
+                <div>
+                    <label for="nmClienteId">NOME</label>
+                    <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                </div>
+                <div>
+                    <label for="telClienteId">TELEFONE</label>
+                    <input type="tel" name="telCliente" id="telClienteId" placeholder="Digite seu telefone"/>
+                </div>
+                <div>
+                    <label for="emailClienteId">E-MAIL</label>
+                    <input type="email" name="emailCliente" id="emailClienteId" placeholder="Digite seu e-mail"/>
+                </div>
+                <div>
+                    <label for="genClienteId">GÊNERO</label>
+                    <select name="genClienteId" id="genClientid">
+                        <option value="m">Masculino</option>
+                        <option value="f">Feminino</option>
+                        <option value="o">Outros</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <h1>QUERYSTRING</h1>
+        <p><a href="index.html?tel=+5511123456789&email=email@email.com.br">Dados</a></p>
+    </div>
+ 
+</section>
+
+<footer>
+    <a href="#topo">Voltar ao topo</a>
+    <p>Desenvolvido por RM95246</p>
+    <p>Todos os direitos reservados. 2022&copy;</p>
+</footer>
+
+</body>
+</html>
+
+<!--   <h2>Contato</h2>
     <p>Entre em contato</p>
     <div>
     <p><img src="./img/tel.png" alt="telefone" width="4%"> 
@@ -98,14 +153,4 @@
     <div>
         <p><img src="./img/mail.png" alt="e-mail" width="4%"> 
         <a href="mailto:rm95246@fiap.com.br">rm95246@fiap.com.br</a></p>
-        </div>
-</section>
-
-<footer>
-    <a href="#topo">Voltar ao topo</a>
-    <p>Desenvolvido por RM95246</p>
-    <p>Todos os direitos reservados. 2021&copy;</p>
-</footer>
-
-</body>
-</html>
+        </div>-->
