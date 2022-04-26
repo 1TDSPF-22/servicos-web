@@ -5,113 +5,153 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SERVIÇOS</title>
+        
         <link rel="stylesheet" href="./css/style.css">
+
+        <style>
+            body{
+               font-family: 'Courier New';
+            }
+        </style>
+
+
     </head>
-    <body>
+    <body style="font-family:'Gill Sans MT';">
         <nav>
             <div>
-                <button>
+                <button class="font-google">
                     <span>CLICK</span>
                 </button>
             </div>
-        <!--
+            <!--
+                <div>
+                    <ul> unordered list
+                        <li><a href="#sobre">Sobre</a></li>  List item
+                    </ul>
+                </div>
+                
+                Fórmula do Emmet para criação dinâmica de estrutura
+                div>ul>li*4>a[href="#"]>{Sobre}
+            -->
+            
             <div>
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#sobre" class="font-google">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#imagens">Imagens</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-
-            Fórmula do Emmet para criação dinâmica de estrutura
-            div>ul>li*4>a[href="#"]>{Sobre}
-        -->
-        <div>
-            <ul>
-                <li><a href="#sobre" target="_blank">Sobre</a></li>
-                <li><a href="#servicos" target="_blank">Serviços</a></li>
-                <li><a href="#imagens" target="_blank">Imagens</a></li>
-                <li><a href="#contato" target="_blank">Contato</a></li>
-            </ul>
-        </div>
         </nav>
-        <header id="topo">
-            <h1>Equipe de Ponta</h1>
-            <p>
-            Somos uma equipe da área de Tecnologia, onde podemos atuar em diversas frentes. Atuamos nos seguimentos de Desenvolvimento WEB, Minicursos remotos de linguagens que estão em alta no mercado. WorkShops com os mais distintos especialistas da área. Segurança da Informação também é uma especialidade que dominamos.    
-            </p>
-            <a href="#servicos">Ver mais...</a>
-        </header>
 
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>
-            A empresa EQUIPE DE PONTA foi criada em 2021 no auge da pandemia, com o intuito de ajudar o próximo, conseguiu construir uma história de sucesso ao longo de um ano de vida. 
-            Não falamos por nós, deixamos nosso trabalho e nossos clientes falarem!
-            </p>
-            <a href="#contato">Contrate Agora!</a>
-        </section>
+            <header id="topo">
+                <h1>Equipe de Ponta</h1>
+                <p>
+                Somos uma equipe da área de Tecnologia, onde podemos atuar em diversas frentes.
+                Atuamos nos seguimentos de Desenvolvimento WEB, Minicursos remotos de linguagens que estão em alta no mercado. WorkShops com os mais distintos especialistas da área.
+                Segurança da Informação também é uma especialidade que dominamos.               
+                </p>
+                <a href="#servicos">Ver mais...</a>
+            </header>
 
-        <section id="imagens">
-            <h2>Imagens</h2>
-            <div>
-                <img src="./img/backbone.jpg" alt="Mapa." title="Backbone." width="100%">
-            </div>
-            <div>
-                <img src="./img/cidade.jpg" alt="Cidade" title="Cidade tecnologica." width="100%">
-            </div>
-            <div>
-                <img src="./img/comunicao.jpg" alt="Redes" title="Comunicação!" width="100%">
-            </div>
-            <div>
-                <img src="./img/icones.png" alt="Icones de grandes empresas." title="Icones." width="100%">
-            </div>
-            <div>
-                <img src="./img/internet.jpg" alt="Grande rede interativa." title="Ligação global." width="100%">
-            </div>
-            <div>
-                <img src="./img/rede.jpg" alt="Rede" title="Rede neural." width="100%">
-            </div>
-        </section>
+            <section id="sobre">
+                <h2>Sobre</h2>
+                <p>
+                    A empresa EQUIPE DE PONTA foi criada em 2021 no auge da pandemia, com o intuito de ajudar o próximo, conseguiu construir uma história de sucesso ao longo de um ano de vida.
+                    Não falamos por nós, deixamos nosso trabalho e nossos clientes falarem!  
+                </p>
+                <a href="#contato">Contrate Agora</a>
+            </section>
 
-        <section id="servicos">
-            <h2>Serviços</h2>
-            <div>
-                <img src="./img/desenvolvimento.jpg" alt="Aparelhos de celular e desktop." title="Desenvolvimento WEB!" width="20%">
-                <p>Desenvolvimento Web!</p>
-            </div>
-            <div>
-                <img src="./img/cursos.png" alt="Linguagens de programação." title="Minicursos!" width="20%">
-                <p>Minicursos sobre linguagens de programação!</p>
-            </div>
-            <div>
-                <img src="./img/eventos.jpg" alt="Headphone" title="WorkShops!" width="20%">
-                <p>WorkShops com especialistas da área!</p>
-            </div>
-            <div>
-                <img src="./img/seguranca-info.png" alt="Termos sobre cybersecurity." title="Segurança da Informação!" width="20%">
-                <p>Segurança da Informação!</p>
-            </div>
-        </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <div>
-                <p>Fale Conosco!</p>
-            </div>
-            <div>
-                <img src="./img/mail.png" alt="Icone de email." title="Nosso email." width="5%">
-                <p><a href="mailto:rm94990@fiap.com.br">rm94990@fiap.com.br</a></p>
-            </div>
-            <div>
-                <img src="./img/tel.png" alt="Icone de telefone." title="Nosso número." width="5%">
-                <p><a href="tel:+5511988888888">(11)98888-8888</a></p>
-            </div>
-        </section>
-        <footer>
-            <a href="#topo">Retornar</a>
-            <div>
-                <p>Desenvolvido por RM94990.</p>
-                <p>Todos os direitos reservados.
-                    2021&copy;</p>
-            </div>
-        </footer>
+            <!-- 
+                Aqui vocês vão criar a seção IMAGENS
+                Vão criar as seguintes TAGs
+                1 - Section quer deve id imagens.
+                Dentro da Section
+                    1 - h2 que deve ter o texto Imagens.
+                    6 - Tags img com as seguintes imagens, respectivamente:
+                        backbone
+                        cidade
+                        comunicao
+                        icones
+                        internet
+                        rede
+            -->
+
+            <section id="imagens">
+                <h2 class="font-google">Imagens</h2>
+                <img src="./img/backbone.jpg" alt="Backbone." width="100%">
+                <img src="./img/cidade.jpg" alt="Cidade." width="100%">
+                <img src="./img/comunicao.jpg" alt="Entrelaçado de Fios." width="100%">
+                <img src="./img/icones.png" alt="Icones de Redes Sociais." width="100%">
+                <img src="./img/internet.jpg" alt="Grande rede Interativa." width="100%">
+                <img src="./img/rede.jpg" alt="Rede Virtual de Informações." width="100%">
+            </section>
+
+            <section id="servicos">
+                <h2>Serviços</h2>
+                <div>
+                    <img src="./img/desenvolvimento.jpg" alt="Tela de Computado." title="Desenvolvimento WEB" width="20%">
+                    <p>Desenvolvimento WEB</p>
+                </div>
+                <div>
+                    <img src="./img/cursos.png" alt="Notebook" title="Linguagens de Programação" width="20%">
+                    <p class="font-google">Minicursos remotos de linguagens</p>
+                </div>
+                <div>
+                    <img src="./img/eventos.jpg" alt="Fone de Ouvido" title="Eventos com Especialistas" width="20%">
+                    <p>WorkShops</p>
+                </div>
+                <div>
+                    <img src="./img/seguranca-info.png" alt="Nuvem de Palavras" title="Segurança de Dados" width="20%">
+                    <p>Segurança da Informação</p>
+                </div>
+            </section>
+
+            <section id="contato">
+                <div>
+                    <form action="index.html" method="get">
+                        <fieldset>
+                            <legend>CONTATO</legend>
+                            <div>
+                                <label for="nmClienteId">Nome:</label>
+                                <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome."/>
+                            </div>
+                            <div>
+                                <label for="telClientId">Telefone:</label>
+                                <input type="tel" name="telCliente" id="telClienteId" placeholder="Digite seu número."/>
+                            </div>
+                            <div>
+                                <label for="emailClientId">Email:</label>
+                                <input type="email" name="emailCliente" id="emailClienteId" placeholder="Digite seu e-mail."/>
+                            </div>
+                            <div>
+                                <label for="generoClientId">Gênero:</label>
+                                <select name="genClient" id="genClientID">
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Feminino</option>
+                                    <option value="o">Outros</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpar">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div>
+                    <h1>QUERYSTRING NA UNHA</h1>
+                    <p><a href="index.html?tel=+5511953500842&email=rm94990@fiap.com">Dados</a></p>
+                </div>
+            </section>
+
+            <footer>
+                <a href="#topo">Voltar</a>
+                <p>Desenvolvido por PF0670.</p>
+                <p>Todos os direitos reservados. 2021&copy;</p>
+            </footer>
+
     </body>
 </html>

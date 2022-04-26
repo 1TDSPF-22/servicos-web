@@ -1,3 +1,36 @@
 body{
     font-family: 'Trebuchet MS';
 }
+
+form{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+form input{
+    display: block;
+    margin: 1% 0;
+    border-radius: 5px;
+    border: solid 2px #ccc;
+}
+
+form input[type=text],input[type=email],input[type=tel], select{
+    height: 50px;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+form input[type=submit],input[type=reset]{
+    display: inline;
+    max-width: 40%;
+    width: 100%;
+    margin: 1% 0 0 6%;
+    background-color: #1e90ff;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+form input[type=submit]:hover,input[type=reser]:hover{
+    background-color: #0e58a1;
+}
