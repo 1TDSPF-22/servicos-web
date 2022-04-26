@@ -109,16 +109,58 @@
             </section>
 
             <section id="contato">
-                <h2>Contato</h2>
-                <p>Fale Conosco</p>
+
                 <div>
-                    <img src="./img/tel.png" alt="Telefone">
-                    <p><a href="tel:+5511997659099">(11)99765-9099</a></p>
+                    <form action="index.html" method="POST">
+                        <fieldset>
+                            <legend>CONTATO</legend>
+                            <div>
+                                <label for="nmClienteId">Nome</label>
+                                <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                            </div>
+                            <div>
+                                <label for="telClienteId">Telefone</label>
+                                <input type="tel" name="telCliente" id="telClienteId" placeholder="Digite seu telefone"/>
+                            </div>
+                            <div>
+                                <label for="emailClienteId">Email</label>
+                                <input type="email" name="emailCliente" id="emailClienteId" placeholder="Digite seu email"/>
+                            </div>
+                            <div>
+                                <label for="genClienteId">GÊNERO</label>
+                                <select name="genCliente" id="genClienteId">
+                                    <option value="m">Masculino</option>
+                                    <option value="f">Feminino</option>
+                                    <option value="o">Outros</option>
+                                </select>
+                                <div>
+                                    <fieldset>
+                                        <legend>GÊNERO</legend>
+
+                                        <label for="genClienteId1">Masculino</label>
+                                        <input type="radio" name="genClientes" id="genClienteId1" value="m" checked/>
+                                        
+                                        <label for="genClienteId2">Feminino</label>
+                                        <input type="radio" name="genClientes" id="genClienteId2" value="f"/>
+                                        
+                                        <label for="genClienteId3">Outros</label>
+                                        <input type="radio" name="genClientes" id="genClienteId3" value="o"/>
+                                    </fieldset>
+                                </div>                            
+                            </div>
+                            <div>
+                                <input type="submit" value="ENVIAR">
+                                <input type="reset" value="LIMPAR">
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
+                
                 <div>
-                    <img src="./img/mail.png" alt="Envelope">
-                    <p><a href="mailto:profalexandre.jesus@fiap.com.br">profalexandre.jesus@fiap.com.br</a></p>
+                    <h1>EXEMPLOS DE QUERYSTRING NA UNHA</h1>
+                    <p><a href="index.html?tel=+5511987664322&email=profemail@fiap.com.br">Dados</a></p>
                 </div>
+
             </section>
 
             <footer>
@@ -128,4 +170,16 @@
             </footer>
 
     </body>
-</html>
+</html>        
+
+
+<!-- <h2>Contato</h2>
+                <p>Fale Conosco</p>
+                <div>
+                    <img src="./img/tel.png" alt="Telefone">
+                    <p><a href="tel:+5511997659099">(11)99765-9099</a></p>
+                </div>
+                <div>
+                    <img src="./img/mail.png" alt="Envelope">
+                    <p><a href="mailto:profalexandre.jesus@fiap.com.br">profalexandre.jesus@fiap.com.br</a></p>
+                </div> -->
