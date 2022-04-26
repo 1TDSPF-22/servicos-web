@@ -15,10 +15,10 @@
     </style>
 
 </head>
-<body>
+<body style= "font-family:'Gill Sans';">
     <nav>
         <div>
-            <button>
+            <button class="font-google">
                 <span>CLICK</span>
             </button>
         </div>
@@ -38,7 +38,7 @@
 
         <div>
             <ul>
-                <li><a href="#sobre" >Sobre</a></li>
+                <li><a href="#sobre" class="font-google" >Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#imagens">Imagens</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -54,9 +54,6 @@
                 Atuamos nos seguimentos de Desenvolvimento WEB, Minicursos remotos de linguagens que estão em alta no mercado. WorkShops com os mais distintos especialistas da área.
                 Segurança da Informação também é uma especialidade que dominamos.
             </p>
-            <div>
-                <img src="./img/seguranca-info.png" alt="" title="" width="40%">
-            </div>
             <a href="#servicos">Ver mais...</a>
         </header>
 
@@ -69,82 +66,122 @@
 
 Não falamos por nós, deixamos nosso trabalho e nossos clientes falarem!
             </p>
-            <div>
-                <img src="./img/internet.jpg" alt="" title="" width="40%">
-            </div>
             <a href="#contato">Contrate Agora</a>
         </section>
 
         <section id="imagens">
-            <h2>Imagens</h2>
-            <div>
-                <img src="./img/cidade.jpg" alt="" title="" width="40%">
-            </div>
-            <div>
-                <img src="./img/backbone.jpg" alt="Backbone" title="" width="40%">
-                <img src="./img/cidade.jpg" alt="Cidade" title="" width="40%">
-                <img src="./img/comunicao.jpg" alt="Entrelaçado de Fios" title="" width="40%">
-                <img src="./img/icones.png" alt="Icones" title="" width="40%">
-                <img src="./img/internet.jpg" alt="" title="" width="40%">
-                <img src="./img/rede.jpg" alt="" title="" width="40%">
-            </div>
+            <h2 class="font-google">Imagens</h2>
+                <img src="./img/backbone.jpg" alt="Backbone" title="" width="100%">
+                <img src="./img/cidade.jpg" alt="Cidade" title="" width="100%">
+                <img src="./img/comunicao.jpg" alt="Entrelaçado de Fios" title="" width="100%">
+                <img src="./img/icones.png" alt="Icones" title="" width="100%">
+                <img src="./img/internet.jpg" alt="" title="" width="100%">
+                <img src="./img/rede.jpg" alt="" title="" width="100%">
             </section>
 
         <section id="servicos">
             <h2>Serviços</h2>
             <div>
-                <img src="./img/cidade.jpg" alt="" title="" width="40%">
+                <img src="./img/desenvolvimento.jpg" alt="Tela de computador" title="Desenvolvimento WEB" width="40%">
+                <p>Desenvolvimento WEB</p>
             </div>
             <div>
-                <p>
-                    Desenvolvimento web
-                </p>
+                <img src="./img/cursos.png" alt="Notebook" title="Linguagens de Programação" width="40%">       
+                <p class="font-google"> Minicurso remoto de linguagens</p>                                 
             </div>
             <div>
-                <img src="./img/cidade.jpg" alt="" title="" width="40%">
+                <img src="./img/eventos.jpg" alt="fone de Ouvido" title="Eventos com Especialistas" width="40%">
+                <p>WorkShops</p>
             </div>
             <div>
-                <p>
-                    Minicurso remoto de linguagens
-                </p>
-            </div>
-            <img src="./img/cidade.jpg" alt="" title="" width="40%">
-                <div>
-                    <p>
-                    WorkShops
-                    </p>
-                </div>
-<div>
-    <img src="./img/cidade.jpg" alt="" title="" width="40%">
-            </div>
-            <div>
-                <p>
-                    Segurança da informação
-                </p>
+                <img src="./img/seguranca-info.png" alt="Nuvem de palavras" title="Segurança de dados" width="40%">
+                <p>Segurança da Informação</p>
             </div>
         </section>
 
         
 
             <section id="contato">
-            <h2>Contato</h2>
-            <div style="background-color: aquamarine;">Fale Conosco</div>
-            <span><img src="./img/internet.jpg" alt="" width="40%"></span>
-            <p>
-                <a href="#contato">Contrate Agora</a>
-                Telefone: 955303325
-                email: yasmincd103@gmail.com
-            </p>
+
+        <div>
+            <form action="index.html" method="POST">
+              <fieldset>
+                <legend> CONTATO </legend>
+                <div>
+                  <label for="nmClienteId">Nome</label>
+                  <input type="text" name="nmCliente"
+                    id= "nmClienteId" placeholder="Digite seu Nome"/>
+                </div>
+
+                <div>
+                    <label for="TelClienteId">Telefone</label>
+                    <input type="tel" name="TelCliente"
+                    id= "telClienteId" placeholder="Digite seu Telefone"/>          
+                </div>
+
+                <div>
+                    <label for="emailClienteId">Email</label>
+                    <input type="email" name="emailCliente"
+                    id= "emailClienteId" placeholder="Digite seu email"/>          
+                </div>
+                <div>
+                    <label for=""genClienteId">Gênero</label>
+                    <select name="="genCliente" id="genClienteId">
+                        <option value="m">Masculino</option>
+                        <option value="f">Feminino</option>
+                        <option value="o">Outros</option>                                    
+                </select>
+                <div>                              
+                        <fieldset> 
+                           <legend>GÊNERO</legend>
+
+                           <label FOR ="genClienteId1">Masculino</label>
+                           <input type="radio" name="genClientes" id="genClienteId1" value="m" checked/>
+
+                           <label FOR ="genClienteId2">Feminino</label>
+                           <input type="radio" name="genClientes" id="genClienteId2" value="f" checked/>
+
+                           <label FOR ="genClienteId3">Outros</label>
+                           <input type="radio" name="genClientes" id="genClienteId3" value="o" checked/>
+                        </fieldset>
+                </div>    
+        </div>
+        <div>      
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </div>
+              </fieldset>      
+            </form>
+        </div>  
+        
+        <div>
+            <h1>EXEMPLOS DE QUERYSTRING NA UNHA</h1>
+            <P><a href="index.html?tel=+5511955303325&email=yasmincd103@gmail.com">Dados</a></P>
+        </div>
             </section>
+
+            <h2>Contato</h2>
+            <p>Fale Conosco</p>
+
+            <div>
+                <img src="./img/tel.png" alt="Telefone" width="5%">
+                <p><a href="tel:+5511955303325">(11)95530-3325</a></p>
+            </div>
+
+            <div>
+                <img src="./img/mail.png" alt="Envelope" width="5%">
+                <p><a href="mailto:yasmincd103@gmail.com">yasmincd103@gmail.com</a></p>
+            </div>
+           
           
          <footer>
             <a href="#topo">Topo</a>
-                <p>
+            <p>
                 Desenvolvido por RM95800 
-                </p>
-                <p>
-                    Todos os direitos reservados.2021&copy;
-                </p>
+            </p>
+            <p>
+                Todos os direitos reservados.2021&copy;
+            </p>
          </footer>
             
     
