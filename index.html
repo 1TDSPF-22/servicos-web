@@ -5,8 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SERVIÇOS</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+            body{
+                font-family: 'Courier New';
+            }
+        </style>
     </head>
-    <body>
+    <body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
         <nav>
             <div>
                 <button>
@@ -19,7 +25,6 @@
                     <li><a href="#sobre">Sobre</a></li> List item
                 </ul>
             </div>
-
                Fórmula do Emmet para criação dinâmica de estrutura
                 div>ul>li*4>a[href="#"]>{Sobre}
             -->
@@ -32,7 +37,7 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-
+        </nav>
             <!--header#topo>h1>{Equipe de Ponta}-->
             <header id="topo">
                 <h1>Equipe de Ponta</h1>
@@ -57,20 +62,81 @@
             <section id="sevicos">
                 <h2>Serviços</h2>
                 <div>
-                    <img src="./img/pato.jpg" alt="Um lindo Pato!" title="PATOOOOOOOOOOOOO"
-                    width="30%">
+                    <img src="" alt="" title="" width="30%">
+                    <p>Desonvolvimento WEB</p>
+               </div>
+               <div>
+                   <img src="" alt="" title="" width="30%">
+                   <p>Minicursos Remotos de Linguagem</p>
                 </div>
                 <div>
-                    <img
-                </div>
-                <div>
-                    <img
-                </div>
-                <div>
-                    <img
-                </div>
+                    <img src="" alt="" title="" width="30%">
+                    <p>Workshops</p>
+               </div>
+               <div>
+                    <img src="" alt="" title="" width="30%">
+                    <p>Segurança da informação</p>
+               </div>
+           
             </section>
 
-        </nav>
+            <section id="imagens">
+                <h2>Imagens</h2>
+                    <img src="./img/" alt="">
+                    <img src="./img/" alt="">
+                    <img src="./img/" alt="">
+                    <img src="./img/" alt="">
+                    <img src="./img/" alt="">
+                    <img src="./img/" alt="">
+            </section>
+
+            <section id="contato">
+                    
+                <div>
+                    <form action="index.html" method="GET">
+                        <fieldset>
+                            <legend>CONTATO</legend>
+                            <div>
+                                <label for="nmClienteId">Nome</label>
+                                <input type="text" name="nmCliente"
+                                id="nmClienteId" placeholder="Digite seu nome"/>
+                            </div>
+                            <div>
+                                <label for="telClienteId">Telefone</label>
+                                <input type="tel" name="telCliente"
+                                id="telClienteId" placeholder="Digite seu telefone"/>
+                            </div>
+                            <div>
+                                <label for="emailClienteId">Email</label>
+                                <input type="email" name="emailCliente"
+                                id="emailClienteId" placeholder="Digite seu email"/>
+                            </div>
+                            <div>
+                                <label for="gemClienteId">GÊNERO</label>
+                                <select name="genCliente" id="genClienteId">
+                                <option value="m">Masculino</option>
+                                <option value="f">Feminino</option>
+                                <option value="m">Outros</option>
+                            </div>
+                            <div>
+                                <input type="submit" value="ENVIAR">
+                                <input type="reset" value="LIMPAR">
+                            </div>
+                        </fieldset>
+
+                    </form>
+                </div>
+
+          
+            
+                <footer>
+                    <br>
+                    <a href="#topo">Voltar ao Topo</a>
+                    <p>
+                        <span>(Desenvolvido por RM95384 Todos os direitos reservados
+                        2022 &copy;)</span>
+                    </p>
+                </footer>
+
     </body>
 </html>
