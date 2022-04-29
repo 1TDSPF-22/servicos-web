@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        console.log("Alô Mundo!")
+        console.log('MSg gerada no HEad')
+    </script>
+    <script src="./js/script.js"></script>
+   
     
 </head>
 <body >
@@ -121,21 +128,21 @@ redes -->
        <section id="contato">
 
         <div>
-            <form action="./img/img/desenvolvimento.jpg" method="post">
+            <form action="./img/img/desenvolvimento.jpg" method="POST">
                 <fieldset>
                     <legend>CONTATO</legend>
-                    <DIV>
+                    <div>
                         <label for="nmCliente">Nome</label>
-                        <input type="text" name="nmCliente" placeholder="Digite o seu nome" id="nmClienteId">
-                    </DIV>
-                    <DIV>
+                        <input onblur="alert('ADEUS!')" type="text" name="nmCliente" placeholder="Digite o seu nome" id="nmClienteId">
+                    </div>
+                    <div>
                         <label for="telCliente">Telefone</label>
-                        <input type="tel" name="telCliente" placeholder="Digite o seu telefone" id="telClienteId">
-                    </DIV>
-                    <DIV>
+                        <input type="tel" name="telCliente" placeholder="Digite o seu telefone" id="telClienteId" >
+                    </div>
+                    <div>
                         <label for="emailCliente">Email</label>
                         <input type="email" name="emailCliente" placeholder="Digite o seu email" id="emailClienteId" pattern="">
-                    </DIV>
+                    </div>
                     <div>
                         <label for="">GÊNERO</label>
                         <select name="genCliente" id="genClienteId"><option value="Masc">Masculino</option>
@@ -176,6 +183,8 @@ redes -->
        </footer>
            
        
-   
+       <script>
+        console.log('MSg gerada no body')
+     </script>   
 </body>
 </html>
