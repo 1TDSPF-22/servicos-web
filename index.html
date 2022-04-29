@@ -4,14 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
         <title>SERVIÇOS</title>
+        
+        <link rel="stylesheet" href="./css/style.css">
+        
+
+        <script>
+            console.log('Alô Mundo!')
+            console.log('MSG gerada no HEAD!')
+        </script>
 
         <style>
             body{
                font-family: 'Courier New';
             }
         </style>
+
+        
 
 
     </head>
@@ -22,7 +31,17 @@
                     <span>CLICK</span>
                 </button>
             </div>
-
+            <!--
+                <div>
+                    <ul> unordered list
+                        <li><a href="#sobre">Sobre</a></li>  List item
+                    </ul>
+                </div>
+                
+                Fórmula do Emmet para criação dinâmica de estrutura
+                div>ul>li*4>a[href="#"]>{Sobre}
+            -->
+            
             <div>
                 <ul>
                     <li><a href="#sobre" class="font-google">Sobre</a></li>
@@ -51,6 +70,21 @@
                 </p>
                 <a href="#contato">Contrate Agora</a>
             </section>
+
+            <!-- 
+                Aqui vocês vão criar a seção IMAGENS
+                Vão criar as seguintes TAGs
+                1 - Section quer deve id imagens.
+                Dentro da Section
+                    1 - h2 que deve ter o texto Imagens.
+                    6 - Tags img com as seguintes imagens, respectivamente:
+                        backbone
+                        cidade
+                        comunicao
+                        icones
+                        internet
+                        rede
+            -->
 
             <section id="imagens">
                 <h2 class="font-google">Imagens</h2>
@@ -90,7 +124,7 @@
                             <legend>CONTATO</legend>
                             <div>
                                 <label for="nmClienteId">Nome</label>
-                                <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                                <input onblur="alert('ADEUS!')" type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
                             </div>
                             <div>
                                 <label for="telClienteId">Telefone</label>
@@ -113,10 +147,10 @@
 
                                         <label for="genClienteId1">Masculino</label>
                                         <input type="radio" name="genClientes" id="genClienteId1" value="m" checked/>
-
+                                        
                                         <label for="genClienteId2">Feminino</label>
                                         <input type="radio" name="genClientes" id="genClienteId2" value="f"/>
-
+                                        
                                         <label for="genClienteId3">Outros</label>
                                         <input type="radio" name="genClientes" id="genClienteId3" value="o"/>
                                     </fieldset>
@@ -129,7 +163,7 @@
                         </fieldset>
                     </form>
                 </div>
-
+                
                 <div>
                     <h1>EXEMPLOS DE QUERYSTRING NA UNHA</h1>
                     <p><a href="index.html?tel=+5511987664322&email=profemail@fiap.com.br">Dados</a></p>
@@ -143,8 +177,13 @@
                 <p>Todos os direitos reservados. 2021&copy;</p>
             </footer>
 
+            <script>
+                console.log('MSG gerada no BODY!')
+            </script>
+            <script src="./js/script.js"></script>
     </body>
-</html>
+
+</html>        
 
 
 <!-- <h2>Contato</h2>
