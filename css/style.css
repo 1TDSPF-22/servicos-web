@@ -61,6 +61,11 @@ form input[type=text],input[type=tel],input[type=email], select{
     font-size: 1.5em; 
 }
 
+form input[type=radio]{
+    display: inline;
+    height: auto;
+}
+
 form input[type=submit],input[type=reset]{
     display: inline;
     max-width: 40%;

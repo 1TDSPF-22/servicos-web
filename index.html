@@ -7,6 +7,11 @@
     <title>SERVIÇOS</title>
         
     <link rel="stylesheet" href="./css/style.css">
+    
+    <script>
+        console.log('Olá Mundo!')
+        console.log('MSG gerada no HEAD!')
+     </script>
 
     <style> 
         body{
@@ -14,7 +19,8 @@
         }
     </style>
     </head>
-<body style="font-family:'Gill Sans MT';">
+
+    <body style="font-family:'Gill Sans MT';">
     <nav>  
         <div>
             <button class="font-google">
@@ -97,12 +103,12 @@
 <section id="contato">
     
     <div>
-        <form action="index.html" method="GET">
+        <form action="index.html" method="POST">
             <fieldset>
                 <legend>CONTATO</legend>
                 <div>
                     <label for="nmClienteId">NOME</label>
-                    <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                    <input onblur="alert('ADEUS!')" type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
                 </div>
                 <div>
                     <label for="telClienteId">TELEFONE</label>
@@ -119,6 +125,20 @@
                         <option value="f">Feminino</option>
                         <option value="o">Outros</option>
                     </select>
+                    <div>
+                    <fieldset>
+                    <legend>GÊNERO</legend>
+
+                    <label for="genClienteId1">Masculino</label>
+                    <input type="radio" name="genClientes" id="genClienteId1" value="m" checked/>
+                                        
+                    <label for="genClienteId2">Feminino</label>
+                    <input type="radio" name="genClientes" id="genClienteId2" value="f"/>
+                                        
+                    <label for="genClienteId3">Outros</label>
+                    <input type="radio" name="genClientes" id="genClienteId3" value="o"/>
+                    </fieldset>
+                </div>            
                 </div>
                 <div>
                     <input type="submit" value="ENVIAR">
@@ -140,6 +160,12 @@
     <p>Desenvolvido por RM95246</p>
     <p>Todos os direitos reservados. 2022&copy;</p>
 </footer>
+
+<script>
+    console.log('MSG gerada no BODY!')
+ </script>
+
+<script src="./js/script.js"></script>
 
 </body>
 </html>
