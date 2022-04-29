@@ -1,3 +1,4 @@
+/* Importado font Oswald do Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body{
@@ -23,4 +24,42 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-style: italic;
+}
+
+form{
+    font-size: 12px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    width: 50%;
+}
+
+form input{
+    display: block;
+    margin: 1% 0;
+    border-radius: 5px;
+    border: solid 2px #ccc;
+    height: 50px;
+}
+
+form input[type=text],input[type=tel],input[type=email], select{
+    width: 100%;
+    font-size: 1.5em;
+}
+
+form input[type=radio]{
+    display: inline;
+    height: auto;
+}
+
+form input[type=submit],input[type=reset]{
+    display: inline;
+    max-width: 40%;
+    width: 30%;
+    margin: 1% 0 0 6%;
+    background-color: #1e90ff;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+form input[type=submit]:hover,input[type=reset]:hover{
+    background-color: #0e58a1;
 }
