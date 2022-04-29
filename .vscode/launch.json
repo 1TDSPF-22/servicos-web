@@ -5,9 +5,9 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-chrome",
+            "type": "msedge",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
+            "name": "EDGE",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         }

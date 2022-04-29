@@ -7,12 +7,20 @@
         <title>SERVIÇOS</title>
         
         <link rel="stylesheet" href="./css/style.css">
+        
+
+        <script>
+            console.log('Alô Mundo!')
+            console.log('MSG gerada no HEAD!')
+        </script>
 
         <style>
             body{
                font-family: 'Courier New';
             }
         </style>
+
+        
 
 
     </head>
@@ -116,7 +124,7 @@
                             <legend>CONTATO</legend>
                             <div>
                                 <label for="nmClienteId">Nome</label>
-                                <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                                <input onblur="alert('ADEUS!')" type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
                             </div>
                             <div>
                                 <label for="telClienteId">Telefone</label>
@@ -169,7 +177,12 @@
                 <p>Todos os direitos reservados. 2021&copy;</p>
             </footer>
 
+            <script>
+                console.log('MSG gerada no BODY!')
+            </script>
+            <script src="./js/script.js"></script>
     </body>
+
 </html>        
 
 
