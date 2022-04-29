@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SERVIÇOS</title>
+        <title>SERVIÇOS</title> 
+        
+
         <link rel="stylesheet" href="./css/style.css">
 
+
+
+        <script>
+            console.log("Hello World")
+            console.log("Mensagem gerada no HEAD")
+        </script>
+
     </head>
+
     <body>
+
+        <script>
+            console.log("Mensagem gerada no BODY")
+        </script>
         <nav>
 
             <div>
@@ -105,17 +120,49 @@
             <section id="contato">
                 <h2>Contato</h2>
                 <div>
-                    <p>
-                        Fale conosco <a href="">aqui</a>!
-                        <div>
-                            Email: checkpoint@fiap.com.br
-                        </div>
-                        <div>
-                            Tel: (01) 2345-6789
-                        </div>
-                    </p>
-                    <a href="#contato"><img src="./img/mail.png" alt="email"></a>
-                    <a href="#contato"><img src="./img/tel.png" alt="telefone"></a>
+                    <form action="index.html" method="POST">
+                        <fieldset>
+                            <legend>CONTATO</legend>
+                            <div>
+                                <label for="nmClienteId">Nome</label>
+                                <input onblur="alert('ADEUS!')" type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                            </div>
+                            <div>
+                                <label for="telClienteId">Telefone</label>
+                                <input type="tel" name="telCliente" id="telClienteId" placeholder="Digite seu telefone"/>
+                            </div>
+                            <div>
+                                <label for="emailClienteId">Email</label>
+                                <input type="email" name="emailCliente" id="emailClienteId" placeholder="Digite seu email"/>
+                            </div>
+                            <div>
+                                <label for="genClienteId">GÊNERO</label>
+                                <select name="genCliente" id="genClienteId">
+                                    <option value="m">Masculino</option>
+                                    <option value="f">Feminino</option>
+                                    <option value="o">Outros</option>
+                                </select>
+                                <div>
+                                    <fieldset>
+                                        <legend>GÊNERO</legend>
+
+                                        <label for="genClienteId1">Masculino</label>
+                                        <input type="radio" name="genClientes" id="genClienteId1" value="m" checked/>
+                                        
+                                        <label for="genClienteId2">Feminino</label>
+                                        <input type="radio" name="genClientes" id="genClienteId2" value="f"/>
+                                        
+                                        <label for="genClienteId3">Outros</label>
+                                        <input type="radio" name="genClientes" id="genClienteId3" value="o"/>
+                                    </fieldset>
+                                </div>                            
+                            </div>
+                            <div>
+                                <input type="submit" value="ENVIAR">
+                                <input type="reset" value="LIMPAR">
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </section>
 
@@ -128,6 +175,7 @@
                 <img src="./img/Oshawott.gif" alt="Pokemon buffando feliz" width="10%">
             </footer>
 
+            <script src="./js/script.js"></script>
 
     </body>
 </html>
