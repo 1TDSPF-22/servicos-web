@@ -34,4 +34,37 @@ body{
     
 }
 
+form{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+form input{
+    display: block;
+    margin: 1% 0;
+    border-radius: 5px;
+    border: solid 2px #ccc;
+    height: 50px;
+}
+
+form input [type=text], input [type=tel], input[type=email], select{
+    width: 100%;
+    font-size: 1.5em;
+}
+form input[type=radio]{
+    display: inline;
+    height: auto;
+}
+form input[type=submit], input[type=reset]{
+    display: inline;
+    max-width: 40%;
+    width: 100%;
+    margin: 1% 0 0 6%;
+    background-color: #1e90ff;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+form input[type=submit]:hover, input[type=reset]:hover{
+    background-color: #0e58a1
+}
 

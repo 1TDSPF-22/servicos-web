@@ -85,33 +85,74 @@
 
             <section id="Contato">
                     
-                <form action="index.html" method="get">
+                <form action="index.html" method="POST">
                     <fieldset>
-                        <legend>CONTATO</legend>
-                        <div>
-                            <label for="nmClienteID">NOME</label>
-                            <input type="text" name="nmCliente"
-                            id = nmClienteID placeholder="Digite seu nome"/>
-                        </div>
-                        <div>
-                            <label for="telClienteID">TELEFONE</label>
-                            <input type="tel" name="telCliente"
-                            id = telClienteID placeholder="Digite seu Telefone"/>
-                        </div>
-                        <div>
-                            <label for="emailClienteID">EMAIL</label>
-                            <input type="email" name="emailCliente"
-                            id = emailClienteID placeholder="Digite seu nEmail"/>
-                        </div>
-                        <div>
-                            <input type="submit" value="ENVIAR" >
-                            <input type="reset" value="LIMPAR">
-                        </div>
-                    </fieldset>
-                    
-
-                    
-                </form>
+                      <legend> CONTATO </legend>
+                      <div>
+                        <label for="nmClienteId">Nome</label>
+                        <input type="text" name="nmCliente"
+                          id= "nmClienteId" placeholder="Digite seu Nome"/>
+                      </div>
+      
+                      <div>
+                          <label for="TelClienteId">Telefone</label>
+                          <input type="tel" name="TelCliente"
+                          id= "telClienteId" placeholder="Digite seu Telefone"/>          
+                      </div>
+      
+                      <div>
+                          <label for="emailClienteId">Email</label>
+                          <input type="email" name="emailCliente"
+                          id= "emailClienteId" placeholder="Digite seu email"/>          
+                      </div>
+                      <div>
+                          <label for=""genClienteId">Gênero</label>
+                          <select name="="genCliente" id="genClienteId">
+                              <option value="m">Masculino</option>
+                              <option value="f">Feminino</option>
+                              <option value="o">Outros</option>                                    
+                      </select>
+                      <div>                              
+                              <fieldset> 
+                                 <legend>GÊNERO</legend>
+      
+                                 <label FOR ="genClienteId1">Masculino</label>
+                                 <input type="radio" name="genClientes" id="genClienteId1" value="m" checked/>
+      
+                                 <label FOR ="genClienteId2">Feminino</label>
+                                 <input type="radio" name="genClientes" id="genClienteId2" value="f" checked/>
+      
+                                 <label FOR ="genClienteId3">Outros</label>
+                                 <input type="radio" name="genClientes" id="genClienteId3" value="o" checked/>
+                              </fieldset>
+                      </div>    
+              </div>
+              <div>      
+                  <input type="submit" value="ENVIAR">
+                  <input type="reset" value="LIMPAR">
+              </div>
+                    </fieldset>      
+                  </form>
+              </div>  
+              
+              <div>
+                  <h1>EXEMPLOS DE QUERYSTRING NA UNHA</h1>
+                  <P><a href="index.html?tel=+5511955303325&email=yasmincd103@gmail.com">Dados</a></P>
+              </div>
+                  </section>
+      
+                  <h2>Contato</h2>
+                  <p>Fale Conosco</p>
+      
+                  <div>
+                      <img src="./img/tel.png" alt="Telefone" width="5%">
+                      <p><a href="tel:+5511955303325">(11)95530-3325</a></p>
+                  </div>
+      
+                  <div>
+                      <img src="./img/mail.png" alt="Envelope" width="5%">
+                      <p><a href="menezeshmaso@gmail.com">menezeshmasp@gmail.com</a></p>
+                  </div>
 
 
 
