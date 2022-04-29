@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Radio+Canada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    background-color: blue;
+}
+
+#topo{
+    font-family:'Courier New', Courier, monospace, serif;
+}
+
+#topo h1{
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+#topo p{
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.font-google{
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 2em;
+    font-style: italic;
+}
+
+footer{
+    font-family: 'Tapestry', cursive;
+}
