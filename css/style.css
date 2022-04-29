@@ -23,31 +23,6 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-style: italic;
-}@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-body{
-    font-family: 'Trebuchet MS', Verdana, Geneva, Tahoma, sans-serif;
-    /*background-color: #c41cca6c;*/
-    background-color: rgba(0, 0, 255,0.3);
-}
-
-#topo{
-    font-family: 'Courier New', Courier, monospace, serif;
-}
-
-#topo h1{
-    text-align: center;
-    font-family: 'Times New Roman', serif;
-}
-
-#topo p{
-    font-family: 'Oswald', sans-serif;
-}
-
-.font-google{
-    font-family: 'Oswald', sans-serif;
-    font-size: 2em;
-    font-style: italic;
 }
 
 form{
@@ -86,10 +61,6 @@ form input[type=submit],input[type=reset]{
 form input[type=submit]:hover,input[type=reset]:hover{
     background-color: #0e58a1;
 }
-
-
-
-
 
 
 
