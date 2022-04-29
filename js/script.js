@@ -22,7 +22,7 @@ const elementoInput = document.querySelector("#telClienteId")
 
 elementoInput.addEventListener("click", function(){
 
-    alert('AAAAAAAAAA')
+    alert('CLICK DETECTADO')
 
 })
 
