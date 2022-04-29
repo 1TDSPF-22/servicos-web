@@ -78,15 +78,42 @@
 
             <section id="imagens">
                 <h2>Imagens</h2>
+                <h2 class="font-google">Imagens</h2>
+                <img src="./img/backbone.jpg" alt="Backbone." width="50%">
+                <img src="./img/cidade.jpg" alt="Cidade." width="50%">
+                <img src="./img/comunicao.jpg" alt="Entrelaçado de Fios." width="50%">
+                <img src="./img/icones.png" alt="Icones de Redes Sociais." width="50%">
+                <img src="./img/internet.jpg" alt="Grande rede Interativa." width="50%">
+                <img src="./img/rede.jpg" alt="Rede Virtual de Informações." width="50%">
+                
                 <div>
-                    <h2 class="font-google">Imagens</h2>
-                    <img src="./img/backbone.jpg" alt="Backbone." width="100%">
-                    <img src="./img/cidade.jpg" alt="Cidade." width="100%">
-                    <img src="./img/comunicao.jpg" alt="Entrelaçado de Fios." width="100%">
-                    <img src="./img/icones.png" alt="Icones de Redes Sociais." width="100%">
-                    <img src="./img/internet.jpg" alt="Grande rede Interativa." width="100%">
-                    <img src="./img/rede.jpg" alt="Rede Virtual de Informações." width="100%">
+                    <table border="inline">
+
+                        <tbody>
+                            <tr>
+                                <th>ID</th> <th>Data</th> <th>Quantidade</th>
+                            </tr>
+    
+                            <tr>
+                                <td>1</td> <td>11/05/2022</td> <td>1</td>
+                            </tr>
+    
+                            <tr>
+                                <td>2</td> <td>12/05/2022</td> <td>2</td>
+                            </tr>
+    
+                            <tr>
+                                <td>3</td> <td>13/05/2022</td> <td>45</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <td>4</td> <td>14/05/2022</td> <td>46</td>
+                        </tfoot>
+
+                    </table>
                 </div>
+
             </section>
 
             <!-- section#servicos>h2{Serviços}div>img -->
@@ -118,60 +145,88 @@
             <hr>
 
             <section id="contato">
-                <h2>Contato</h2>
                 <div>
-                    <form action="index.html" method="POST">
+                    <form action="index.html" method="post">
                         <fieldset>
                             <legend>CONTATO</legend>
                             <div>
                                 <label for="nmClienteId">Nome</label>
-                                <input onblur="alert('ADEUS!')" type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                                <input type="text" name="nmCliente" id="nmClienteId"  placeholder="Digite seu nome">
                             </div>
+
                             <div>
                                 <label for="telClienteId">Telefone</label>
-                                <input type="tel" name="telCliente" id="telClienteId" placeholder="Digite seu telefone"/>
+                                <input type="tel" name="telCliente" id="telClienteId"  placeholder="Digite seu telefone">
                             </div>
+
                             <div>
                                 <label for="emailClienteId">Email</label>
-                                <input type="email" name="emailCliente" id="emailClienteId" placeholder="Digite seu email"/>
-                            </div>
-                            <div>
-                                <label for="genClienteId">GÊNERO</label>
-                                <select name="genCliente" id="genClienteId">
-                                    <option value="m">Masculino</option>
-                                    <option value="f">Feminino</option>
-                                    <option value="o">Outros</option>
-                                </select>
-                                <div>
-                                    <fieldset>
-                                        <legend>GÊNERO</legend>
-
-                                        <label for="genClienteId1">Masculino</label>
-                                        <input type="radio" name="genClientes" id="genClienteId1" value="m" checked/>
-                                        
-                                        <label for="genClienteId2">Feminino</label>
-                                        <input type="radio" name="genClientes" id="genClienteId2" value="f"/>
-                                        
-                                        <label for="genClienteId3">Outros</label>
-                                        <input type="radio" name="genClientes" id="genClienteId3" value="o"/>
-                                    </fieldset>
-                                </div>                            
-                            </div>
-                            <div>
-                                <input type="submit" value="ENVIAR">
-                                <input type="reset" value="LIMPAR">
+                                <input type="email" name="emailCliente" id="emailClienteId" placeholder="Digite seu email.">
                             </div>
                         </fieldset>
+
+                        <fieldset>
+                            <legend>INFO ACADÊMICAS</legend>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>GÊNERO COM SELECT</legend>
+                            <label for="genClienteId">Gênero</label>
+
+                            <select name="genCliente" id="genClienteId">
+                                <option value="m">Masculino</option>
+                                <option value="f">Feminino</option>
+                                <option value="nb">Não binário</option>
+                                <option value="o">Outro</option>
+                                <option value="null">Prefiro não dizer</option>
+
+                            </select>
+                        </fieldset>
+
+                        
+                        <!-- <div>
+                            <fieldset>
+                                <legend>GÊNERO COM RADIO</legend>
+
+                                <label for="genClienteId1">Masculino</label>
+                                <input type="radio" name="genCliente" id="genClienteId1" value="m" checked>
+
+                                <label for="genClienteId2">Feminino</label>
+                                <input type="radio" name="genCliente" id="genClienteId2" value="f">
+
+                                <label for="genClienteId3">Não binário</label>
+                                <input type="radio" name="genCliente" id="genClienteId3" value="nb">
+
+                                <label for="genClienteId4">Outro</label>
+                                <input type="radio" name="genCliente" id="genClienteId4" value="o">
+
+                                <label for="genClienteId5">Prefiro não dizer</label>
+                                <input type="radio" name="genCliente" id="genClienteId5" value="null">
+                            </fieldset>
+                        </div> -->
+
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                        </div>
+
                     </form>
                 </div>
             </section>
 
             <hr>
 
+            <div>
+                <h1>QuerryString "na unha"</h1>
+                <p><a href="index.html?tel=+551101234123&email=haironewdawn@gmail.com ">Dados</a></p>
+                <!-- A querry sempre pega chave e valor, concatenado com um &
+                os parametros são passados depois de um ? -->
+            </div>
+
             <footer>
                 <a href="#topo">Voltar</a>
                 <p>Desenvolvido por RM93000.</p>
-                <p>Todos os direitos reservados. 2021&copy;</p>
+                <p>Todos os direitos reservados. 2022&copy;</p>
                 <img src="./img/Oshawott.gif" alt="Pokemon buffando feliz" width="10%">
             </footer>
 
