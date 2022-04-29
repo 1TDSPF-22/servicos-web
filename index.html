@@ -9,6 +9,12 @@
 
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script>
+        console.log('Hello world')
+    </script>
+
+
 </head>
 
 <body>
@@ -113,7 +119,8 @@
                     <legend>CONTATO</legend>
                     <div>
                         <label for="nmClienteId">Nome</label>
-                        <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome...">
+                        <input onblur="alert('ADEUS')" type="text" name="nmCliente" id="nmClienteId"
+                            placeholder="Digite seu nome...">
                     </div>
                     <br>
                     <div>
@@ -156,6 +163,11 @@
         <p> Todos os direitos reservados <br>
             2021 &copy </p>
     </footer>
+    <script>
+        console.log('Hello world')
+        console.log('msg gerada no body')
+    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
