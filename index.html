@@ -84,22 +84,46 @@
             </section>
 
             <section id="Contato">
-                <h2>Contato</h2>
-                <p>Fale Conosco</p>
-                <div>
-                    <img src="./img/tel.png" alt="Telefone">
-                    <p><a href="tel:11959305458">(11)959305458</a></p>    
-                </div>
-                <div>
-                    <img src="./img/mail.png" alt="Envelope">
-                    <p><a href="mailto:menezeshmasp@gmail.com">menezeshmasp@gmail.com</a></p>    
-                </div>
+                    
+                <form action="index.html" method="get">
+                    <fieldset>
+                        <legend>CONTATO</legend>
+                        <div>
+                            <label for="nmClienteID">NOME</label>
+                            <input type="text" name="nmCliente"
+                            id = nmClienteID placeholder="Digite seu nome"/>
+                        </div>
+                        <div>
+                            <label for="telClienteID">TELEFONE</label>
+                            <input type="tel" name="telCliente"
+                            id = telClienteID placeholder="Digite seu Telefone"/>
+                        </div>
+                        <div>
+                            <label for="emailClienteID">EMAIL</label>
+                            <input type="email" name="emailCliente"
+                            id = emailClienteID placeholder="Digite seu nEmail"/>
+                        </div>
+                        <div>
+                            <input type="submit" value="ENVIAR" >
+                            <input type="reset" value="LIMPAR">
+                        </div>
+                    </fieldset>
+                    
+
+                    
+                </form>
+
+
+
+
+
+
             </section>
 
             <footer>
                 <a href="topo">Voltar</a>
                 <p>Desenvolvido por Rm94290</p>
-                <p>Todos os direitos reservados</p>
+                <p>Todos os direitos reservados. 2021©</p>
             </footer>
     </body>
 </html>
