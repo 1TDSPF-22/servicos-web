@@ -3,15 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <title>SERVIÇOS</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js"></script>
+
+
+        <script>
+            console.log('Alô Mundo!')
+            console.log('MSG gerada no HEAD')
+        </script>
 
         <style>
             body{
                font-family: 'Courier New';
             }
-        </style>
+        </style>    
 
 
     </head>
@@ -90,7 +98,7 @@
                             <legend>CONTATO</legend>
                             <div>
                                 <label for="nmClienteId">Nome</label>
-                                <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                                <input onblur="alert('ADEUS!')" type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
                             </div>
                             <div>
                                 <label for="telClienteId">Telefone</label>
@@ -142,7 +150,9 @@
                 <p>Desenvolvido por PF0670.</p>
                 <p>Todos os direitos reservados. 2021&copy;</p>
             </footer>
-
+            <script>             
+                console.log('MSG gerada no BODY')
+            </script>
     </body>
 </html>
 
