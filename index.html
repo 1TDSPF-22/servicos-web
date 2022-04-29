@@ -4,43 +4,35 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
         <title>SERVIÇOS</title>
-        <link rel="stylesheet" href="css/style.css">
 
         <style>
             body{
-                font-family: 'Courier New';
+               font-family: 'Courier New';
             }
         </style>
+
 
     </head>
     <body style="font-family:'Gill Sans MT';">
         <nav>
             <div>
-                <button>
+                <button class="font-google">
                     <span>CLICK</span>
                 </button>
             </div>
-            <!--
-                <div>
-                    <ul> unordered list
-                        <li><a href="#sobre">Sobre</a></li>  List item
-                    </ul>
-                </div>
-                
-                Fórmula do Emmet para criação dinâmica de estrutura
-                div>ul>li*4>a[href="#"]>{Sobre}
-            -->
-            
+
             <div>
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#sobre" class="font-google">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#imagens">Imagens</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
+
             <header id="topo">
                 <h1>Equipe de Ponta</h1>
                 <p>
@@ -61,57 +53,107 @@
             </section>
 
             <section id="imagens">
-                <h2>Imagens</h2>
-                <img src="img/cidade.jpg" alt="Cidade." width="100%">
-                <img src="img/backbone.jpg" alt="Backbone." width="100%">
-                <img src="img/comunicao.jpg" alt="Entrelaçado de fios." width="100%">
-                <img src="img/icones.png" alt="Icones de Redes Sociais." width="100%">
-                <img src="img/internet.jpg" alt="Grande rede Interativa." width="100%">
-                <img src="img/rede.jpg" alt="Rede virtual de Informação." width="100%">
+                <h2 class="font-google">Imagens</h2>
+                <img src="./img/backbone.jpg" alt="Backbone." width="100%">
+                <img src="./img/cidade.jpg" alt="Cidade." width="100%">
+                <img src="./img/comunicao.jpg" alt="Entrelaçado de Fios." width="100%">
+                <img src="./img/icones.png" alt="Icones de Redes Sociais." width="100%">
+                <img src="./img/internet.jpg" alt="Grande rede Interativa." width="100%">
+                <img src="./img/rede.jpg" alt="Rede Virtual de Informações." width="100%">
             </section>
 
             <section id="servicos">
                 <h2>Serviços</h2>
                 <div>
-                    <img src="img/desenvolvimento.jpg" alt="Homem jovem." title="Homem Lindo!" width="10%">
+                    <img src="./img/desenvolvimento.jpg" alt="Tela de Computado." title="Desenvolvimento WEB" width="20%">
                     <p>Desenvolvimento WEB</p>
                 </div>
                 <div>
-                    <img src="img/cursos.png" alt="Notebook" title="Linguagem de Programação" width="20%">
-                    <p>Minicursos remoto de linguagens</p>
+                    <img src="./img/cursos.png" alt="Notebook" title="Linguagens de Programação" width="20%">
+                    <p class="font-google">Minicursos remotos de linguagens</p>
                 </div>
                 <div>
-                    <img src="img/eventos.jpg" alt="Fone de ouvido" title="Eventos com Especialistas" width="20%">
+                    <img src="./img/eventos.jpg" alt="Fone de Ouvido" title="Eventos com Especialistas" width="20%">
                     <p>WorkShops</p>
                 </div>
                 <div>
-                    <img src="img/seguranca-info.png" alt="Nuvem de palavras" title="Segurança de Dados" width="20%">
+                    <img src="./img/seguranca-info.png" alt="Nuvem de Palavras" title="Segurança de Dados" width="20%">
                     <p>Segurança da Informação</p>
                 </div>
             </section>
 
-            <selection id="contato">
-                <h2>Contato</h2>
-                <p>Fale conosco</p>
+            <section id="contato">
+
                 <div>
-                    <img src="img/tel.png" alt="Telefone">
-                        <p><a href="tel:11997569099">(11)99756-9099</a></p>
-                    </img>
+                    <form action="index.html" method="POST">
+                        <fieldset>
+                            <legend>CONTATO</legend>
+                            <div>
+                                <label for="nmClienteId">Nome</label>
+                                <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                            </div>
+                            <div>
+                                <label for="telClienteId">Telefone</label>
+                                <input type="tel" name="telCliente" id="telClienteId" placeholder="Digite seu telefone"/>
+                            </div>
+                            <div>
+                                <label for="emailClienteId">Email</label>
+                                <input type="email" name="emailCliente" id="emailClienteId" placeholder="Digite seu email"/>
+                            </div>
+                            <div>
+                                <label for="genClienteId">GÊNERO</label>
+                                <select name="genCliente" id="genClienteId">
+                                    <option value="m">Masculino</option>
+                                    <option value="f">Feminino</option>
+                                    <option value="o">Outros</option>
+                                </select>
+                                <div>
+                                    <fieldset>
+                                        <legend>GÊNERO</legend>
+
+                                        <label for="genClienteId1">Masculino</label>
+                                        <input type="radio" name="genClientes" id="genClienteId1" value="m" checked/>
+
+                                        <label for="genClienteId2">Feminino</label>
+                                        <input type="radio" name="genClientes" id="genClienteId2" value="f"/>
+
+                                        <label for="genClienteId3">Outros</label>
+                                        <input type="radio" name="genClientes" id="genClienteId3" value="o"/>
+                                    </fieldset>
+                                </div>                            
+                            </div>
+                            <div>
+                                <input type="submit" value="ENVIAR">
+                                <input type="reset" value="LIMPAR">
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
+
                 <div>
-                    <img src="img/mail.png" alt="Envelope">
-                        <p><a href="mailto:jet.almeidareis07@gmail.com.br">jet.almeidareis07@gmail.com.br</a></p>
-                    </img>
+                    <h1>EXEMPLOS DE QUERYSTRING NA UNHA</h1>
+                    <p><a href="index.html?tel=+5511987664322&email=profemail@fiap.com.br">Dados</a></p>
                 </div>
-            </selection>
+
+            </section>
 
             <footer>
                 <a href="#topo">Voltar</a>
-                <p>Desenvolvido por RM95603</p>
+                <p>Desenvolvido por PF0670.</p>
                 <p>Todos os direitos reservados. 2021&copy;</p>
             </footer>
-            
+
     </body>
 </html>
 
 
+<!-- <h2>Contato</h2>
+                <p>Fale Conosco</p>
+                <div>
+                    <img src="./img/tel.png" alt="Telefone">
+                    <p><a href="tel:+5511997659099">(11)99765-9099</a></p>
+                </div>
+                <div>
+                    <img src="./img/mail.png" alt="Envelope">
+                    <p><a href="mailto:profalexandre.jesus@fiap.com.br">profalexandre.jesus@fiap.com.br</a></p>
+                </div> -->
