@@ -7,6 +7,7 @@
         <title>SERVIÇOS</title>
         
         <link rel="stylesheet" href="./css/style.css">
+        
 
         <style>
             body{
@@ -14,6 +15,10 @@
             }
         </style>
 
+        <script>
+            console.log('Alô Mundo!')
+            console.log('MSG gerada no HEAD!')
+        </script>
 
     </head>
     <body style="font-family:'Gill Sans MT';">
@@ -91,11 +96,11 @@
             <section id="servicos">
                 <h2>Serviços</h2>
                 <div>
-                    <img src="./img/desenvolvimento.jpg" alt="Tela de Computado." title="Desenvolvimento WEB" width="20%">
+                    <img src="./img/desenvolvimento web.jpg" alt="Tela de Computador." title="Desenvolvimento WEB" width="20%">
                     <p>Desenvolvimento WEB</p>
                 </div>
                 <div>
-                    <img src="./img/cursos.png" alt="Notebook" title="Linguagens de Programação" width="20%">
+                    <img src="./img/minicursos.png" alt="Notebook" title="Linguagens de Programação" width="20%">
                     <p class="font-google">Minicursos remotos de linguagens</p>
                 </div>
                 <div>
@@ -116,7 +121,7 @@
                             <legend>CONTATO</legend>
                             <div>
                                 <label for="nmClienteId">Nome</label>
-                                <input type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
+                                <input onblur="alert('ADEUS!')" type="text" name="nmCliente" id="nmClienteId" placeholder="Digite seu nome"/>
                             </div>
                             <div>
                                 <label for="telClienteId">Telefone</label>
@@ -169,7 +174,12 @@
                 <p>Todos os direitos reservados. 2021&copy;</p>
             </footer>
 
+            <script>
+                console.log('MSG gerada no BODY!')
+            </script>
+        <script src="./js/script.js"></script>
     </body>
+
 </html>        
 
 
