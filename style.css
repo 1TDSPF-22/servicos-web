@@ -101,3 +101,11 @@ form input[type=submit]:hover,input[type=reset]:hover{
     background-color: #191970;
 
 }
+
+button{
+    background-color: #0c58a1;
+}
+
+li {
+    background-color: bisque;
+}
