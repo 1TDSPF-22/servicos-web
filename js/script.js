@@ -157,3 +157,21 @@
 //Executa a função com o parâmetro adiconarAtrinuto
 //Passando o parâmetro para a função
 //adicionarAtributo("div ul li img",  "./img/email.png")
+
+//Exercício da Lâmpada
+//Crie um programa que simule a luz de uma lâmpada.
+/*
+    1. Crie 2 botões, um para ligar e outro para desligar a lâmpada.
+    2. Crie uma div e adicione um elemento img com o id "img-lampada"
+    3. Crie um evento para o botão ligar, que adicione o atributo src da imagem com o valor "img/lampada-acesa.png"
+    4. Crie um evento para o botão desligar, que adicione o atributo src da imagem com o valor "img/lampada-apagada.png"
+*/
+
+function ligar(){
+    document.getElementById('lamp').src='pic_on.gif'
+}
+
+function desligar(){
+    document.getElementById('lamp').src='pic_off.gif'
+}
+
