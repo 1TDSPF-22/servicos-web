@@ -1,0 +1,21 @@
+#ligar-desligar{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+
+#ligar-desligar button{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+#img-lampada{
+    size: 100px;
+    margin-right: 10px;
+}
+
+#quadro-cores{
+    background-color: black;
+}
