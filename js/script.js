@@ -168,10 +168,13 @@
 */
 
 function ligar(){
-    document.getElementById('lamp').src='pic_on.gif'
+     document.getElementById('lamp').src='pic_on.gif'
+    
+     
+    
 }
 
 function desligar(){
-    document.getElementById('lamp').src='pic_off.gif'
+   document.getElementById('lamp').src='pic_off.gif'
 }
 
