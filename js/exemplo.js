@@ -41,8 +41,8 @@ ou defini de volta para 0.
 
 function alteraDiv(){
     document.getElementById("quadro-cores").style.backgroundColor = "yellow"
-document.getElementById("quadro-cores").style.height = "250px"
-document.getElementById("quadro-cores").style.width = "250px"
+    document.getElementById("quadro-cores").style.height = "250px"
+    document.getElementById("quadro-cores").style.width = "250px"
 
 
 //Math.round(Math.random()*100)
