@@ -131,7 +131,7 @@
 //     //Declarando variáveis
 //     let resultado = (parseInt(numero1) + parseInt(numero2))
 //     console.log(resultado)
-    
+
 //     //Selecionando um elemento HTML e alterando o texto
 //     // com querySelectorAll 
 //     const links = document.querySelectorAll("a")
@@ -151,7 +151,7 @@
 //     for(let i = 0; i < elementoSelecionado.length; i++){
 //         elementoSelecionado[i].style.backgroundColor = cor
 //     }
-    
+
 //     //Imprimindo o elemento selecionado com console.log
 //     console.log(elementoSelecionado)
 
@@ -159,8 +159,8 @@
 //  //Executa a função com o parâmetro processandoElemento
 //     //Passando o parâmetro para a função
 //     processandoElemento("a", "#fff")
-    
-// //Exemplo de uma função que adiciona atributos a um elemento
+
+// //Exemplo de uma 
 // function adicionarAtributo(elemento, valor){
 //     //Declarando constante
 //     const elementoSelecionado = document.querySelectorAll(elemento)
@@ -168,7 +168,7 @@
 //         // for(let i = 0; i < elementoSelecionado.length; i++){
 //         //     elementoSelecionado[i].src = valor
 //         // }
-        
+
 //         elementoSelecionado[Math.round(Math.random()+1)].src = valor
 
 //  }
@@ -178,10 +178,36 @@
 
 //Exercício da Lâmpada
 //Crie um programa que simule a luz de uma lâmpada.
-/*
-    1. Crie 2 botões, um para ligar e outro para desligar a lâmpada.
-    2. Crie uma div e adicione um elemento img com o id "img-lampada"
-    3. Crie um evento para o botão ligar, que adicione o atributo src da imagem com o valor "img/lampada-acesa.png"
-    4. Crie um evento para o botão desligar, que adicione o atributo src da imagem com o valor "img/lampada-apagada.png"
 
+// Função que adiciona atributo ao um elemento
+function adicionarAtributo(elemento, valor) {
+    const elementoSelecionado = document.querySelector(elemento)
+    elementoSelecionado.src = valor
+}
+
+// Pega o botão pelo id
+const btn = document.getElementById("btn")
+const colors = ["red", "green"]
+let index = 0
+
+// Evento click e estilização do botão
+btn.addEventListener("click", onClick);
+btn.innerHTML = "CLICK AQUI"
+btn.style.fontWeight = "bold"
+btn.style.backgroundColor = "#F5DEB3"
+
+// Função para trocar o img, background-color e a escrita do botão
+function onClick(){
+    btn.style.backgroundColor = colors[index]
+    index = index >= colors.length - 1 ? 0 : index + 1;
+    if (btn.style.backgroundColor = colors[index] == 'green') {
+        adicionarAtributo("#img-lampada", "./img/pic_off.gif");
+        btn.innerHTML = "DESLIGADO";
+    } else {
+        adicionarAtributo("#img-lampada", "./img/pic_on.gif");
+        btn.innerHTML = "LIGADO"
+    }
+}
+/* index - Cada vez que o botão é clicado, incrementa o valor na variável index 
+ou define de volta para 0.
 */
