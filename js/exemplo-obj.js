@@ -5,18 +5,18 @@
 //console.log(pessoa)
 
 //Exemplo de criação Objeto em Javascript
-var pessoa ={
-    nome:"Vinícius",
-    idade:17,
-    interesses:['Aposentar', 'Viajar', 'Carro voador'],
-    geral: function(){
-        console.log(`${this.nome} tem ${this.idade} anos de idade. Ele tem interesse em ${this.interesses[0]}, ${this.interesses[1]} e ${this.interreses[2]}.`)
-    },
+//var pessoa ={
+    //nome:"Vinícius",
+    //idade:17,
+    //interesses:['Aposentar', 'Viajar', 'Carro voador'],
+    //geral: function(){
+       // console.log(`${this.nome} tem ${this.idade} anos de idade. Ele tem interesse em ${this.interesses[0]}, ${this.interesses[1]} e ${this.interreses[2]}.`)
+    //},
 
-    saudacao:function(){
-        alert(`Meu nome é ${this.nome}`)
-    }
-}
+   // saudacao:function(){
+       // alert(`Meu nome é ${this.nome}`)
+   // }
+//}
 
 //Imprimindo o objeto
 //console.log(pessoa)
@@ -24,8 +24,12 @@ var pessoa ={
 //Acessando um atributo
 
 //console.log(pessoa.nome)
-console.log(pessoa["nome"])
+//console.log(pessoa["nome"])
 
 //Executado metodos do objeto
-pessoa.geral()
-pessoa.saudacao()
+//pessoa.geral()
+//pessoa.saudacao()
+
+const botaoSubmit = document.getElementById("btnCadCli")
+
+//Atrelar listen ao evento de botão para que eu pos
