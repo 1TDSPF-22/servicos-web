@@ -26,42 +26,39 @@ body{
     font-style: italic;
 }
 
-#topo{
-    background-image: url("../img/");
-    background-size: ;
-}
-
 form{
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-form input,select{
+form input{
     display: block;
     margin: 1% 0;
     border-radius: 5px;
-    border: solid 2px #a9a9a9;
+    border: solid 2px #ccc;
+    height: 50px;
 }
 
-form select{
-    height: 30px;
-    width: 130px;
-    font-size: 1em;
+form input[type=text],input[type=tel],input[type=email], select{
+    width: 100%;
+    font-size: 1.5em;    
 }
 
-form input[type=text],input[type=tel],input[type=email]{
-    height: 30px;
-    width: 20%;
-    font-size: 1.1em;
-}
-
-form input[type=reset],[type=submit]{
+form input[type=radio]{
     display: inline;
-    max-width: 30%;
-    width: 50%;
+    height: auto;
+}
+
+form input[type=submit],input[type=reset]{
+    display: inline;
+    max-width: 40%;
+    width: 100%;
     margin: 1% 0 0 6%;
-    background-color: #cccc;
-    color: #000000;
+    background-color: #1e90ff;
+    color: #FFFFFF;
     font-size: 1.2em;
 }
 
+form input[type=submit]:hover,input[type=reset]:hover{
+    background-color: #0e58a1;
+}
